@@ -1,7 +1,6 @@
-import React from "react";
 import { FaTwitter, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 
-const links = [
+const Links = [
   {
     id: 1,
     url: "/",
@@ -59,4 +58,4 @@ const SocialBar = () => {
   );
 };
 
-export { links, SocialBar };
+export { Links, SocialBar };

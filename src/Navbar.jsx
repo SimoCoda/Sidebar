@@ -1,6 +1,5 @@
-import React from "react";
 import { FaBars } from "react-icons/fa";
-import { links, SocialBar } from "./links";
+import { Links, SocialBar } from "./links";
 import {useGlobalContext} from "./context";
 
 const Navbar = () => {
@@ -17,7 +16,7 @@ const Navbar = () => {
     </header>
     <div className="links-container">
       <ul className="nav-links">
-        {links.map((el) => {
+        {Links.map((el) => {
           return (
             <li key={el.id}>
               <a href={el.url} alt={el.text}>{el.text}</a>

@@ -1,7 +1,6 @@
-import React from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import styled from "styled-components";
-import { links, SocialBar } from "./links";
+import { Links, SocialBar } from "./links";
 import {useGlobalContext} from "./context"
 
 const Sidebar = () => {
@@ -19,7 +18,7 @@ const Sidebar = () => {
       </header>
       <ul className="sidebar-links">
         {
-          links.map(link => {
+          Links.map(link => {
             return <li key={link.id} className="link" onClick={closeSidebar}>
               <a href={link.url}>{link.text}</a>
               </li>
